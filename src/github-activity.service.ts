@@ -30,8 +30,6 @@ export class GithubActivityService {
       },
     });
 
-    console.log('response', response);
-
     if (!response.ok) {
       throw new Error(
         `GitHub API request failed with status ${response.status}`,
