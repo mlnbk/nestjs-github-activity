@@ -71,4 +71,5 @@ export enum GithubActivityType {
   PullRequestReviewEvent = 'PullRequestReviewEvent',
   PullRequestReviewCommentEvent = 'PullRequestReviewCommentEvent',
   PushEvent = 'PushEvent',
+  PublicEvent = 'PublicEvent',
 }
