@@ -44,12 +44,12 @@ export class GithubActivityService {
         created_at: d.created_at,
         actor: {
           display_login: d.actor.display_login,
-          url: d.actor.url,
+          url: `https://github.com/${d.actor.display_login}`,
           avatar_url: d.actor.avatar_url,
         },
         repo: {
           name: d.repo.name,
-          url: d.repo.url,
+          url: `https://github.com/${d.repo.name}`,
         },
         payload: {
           action: d.payload.action,
