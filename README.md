@@ -72,7 +72,7 @@ export class AppController {
 
   @Get('/github-activities')
   async getGitHubActivities(): Promise<GithubActivityResponse> {
-    const activities = await this.githubService.fetchGithubActivities();
+    const activities = await this.githubService.fetchGithubActivities({ limit: 50 }); // optional limit parameter
     return activities;
   }
 }
